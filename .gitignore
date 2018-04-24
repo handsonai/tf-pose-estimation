@@ -97,6 +97,10 @@ ENV/
 # mkdocs documentation
 /site
 
+# Intelij editor
+.idea
+*.iml
+
 # mypy
 .mypy_cache/
 
