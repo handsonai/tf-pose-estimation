@@ -2,7 +2,7 @@
 *last update 05-03-2018*
 
 ## Plotting results
-### extract_body_parts_plot.py
+### [extract_body_parts_plot.py](src/extract_body_parts_plot.py)
 Script to plot images in a folder, overlayed with lines indicating the body
 parts found.
 
