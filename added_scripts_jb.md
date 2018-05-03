@@ -1,4 +1,4 @@
-# Scripts and notes Jan Bijster
+# Pose matching and PCA analysis
 *last update 05-03-2018*
 
 ## Plotting results
