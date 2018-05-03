@@ -31,10 +31,12 @@ a format like returned by the tf-pose-estimation algorithm.
 Script to read and convert all the annotations in an annotated person-keypoints
 dataset from the COCO datasets.
 (I have not included the datasets in this repository, because they are quite
-large. The result of this script is included, so you can skip it.)
+large. You can download the COCO annotations from http://cocodataset.org/#download. The result of this script is included, so you can also skip it.)
 ### [eigenpose.py](src/eigenpose.py)
 Script to perform PCA on processed pose data and plot the found component
 vectors.
 ### results
 Using 8475 full poses from the COCO 2017 person-keypoints training set:
 ![PCA analysis result](/results/eigenposes.jpg)
+These images show the principal components of the dataset: the different ways in which the poses vary, ordered by magnitude. So the main variation was found in the (comp 0 + / comp 0 -) offsets, which corresponds roughly to sitting/standing. The next most notable variation corresponds to rotation. In fact, component 1, 4 and 7 roughly correspond to rotation around different axes. (Roll, yaw and pitch).
+To play around with the effect of PCA components of *faces* see [this cool online model](https://www.auduno.com/clmtrackr/examples/modelviewer_pca.html) by Audun M. Øygard.
