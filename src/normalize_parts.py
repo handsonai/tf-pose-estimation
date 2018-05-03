@@ -37,6 +37,9 @@ def normalize_parts(parts, all_points_needed = True):
     line2 = math.sqrt(pow(parts[11].x - parts[1].x, 2) + pow(parts[11].y - parts[1].y, 2))
     scale = 0.5 * (line1 + line2)
 
+    if scale == 0:
+        return None
+
     # 3. apply transformation
     parts_norm = []
 
